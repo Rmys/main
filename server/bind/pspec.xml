@@ -29,6 +29,7 @@
             <Dependency>json-c-devel</Dependency>
             <Dependency>libedit-devel</Dependency>
             <Dependency>jemalloc-devel</Dependency>
+            <Dependency>liburcu-devel</Dependency>
             <Dependency>libnghttp2-devel</Dependency>
             <Dependency>libmaxminddb-devel</Dependency>
 	    <Dependency>mit-kerberos-devel</Dependency>
@@ -54,7 +55,9 @@
             <Dependency>mit-kerberos</Dependency>
             <Dependency>lmdb</Dependency>
             <Dependency>libuv</Dependency>
+            <Dependency>zlib</Dependency>
             <Dependency>json-c</Dependency>
+            <Dependency>liburcu</Dependency>
             <Dependency>jemalloc</Dependency>
             <Dependency>libnghttp2</Dependency>
             <Dependency>libmaxminddb</Dependency>
@@ -87,6 +90,10 @@
         <Summary>Utilities for querying DNS name servers</Summary>
         <RuntimeDependencies>
             <Dependency release="current">bind-libs</Dependency>
+            <Dependency>lmdb</Dependency>
+            <Dependency>liburcu</Dependency>
+            <Dependency>openssl</Dependency>
+            <Dependency>jemalloc</Dependency>
             <Dependency>readline</Dependency>
             <Dependency>mit-kerberos</Dependency>
             <Dependency>python3</Dependency>
