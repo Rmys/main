@@ -12,7 +12,7 @@
         <IsA>service</IsA>
         <Summary>The Berkeley Internet Name Domain (BIND) DNS (Domain Name System) server</Summary>
         <Description>bind is an implementation of the DNS protocols, bind includes a DNS server (named), a resolver library and tools for verifying that the DNS server is operating properly.</Description>
-        <Archive sha1sum="7331e36171bba93e30d6874b8f70f097b0a3ba1d" type="tarxz">ftp://ftp.isc.org/isc/bind9/9.18.18/bind-9.18.18.tar.xz</Archive>
+        <Archive sha1sum="9d323db5f1d6f3c4485ba916c746c58a56a7b002" type="tarxz">ftp://ftp.isc.org/isc/bind9/9.20.26/bind-9.20.26.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>openssl-devel</Dependency>
             <Dependency>libxml2-devel</Dependency>
@@ -38,7 +38,7 @@
             <Patch level="1">fedora/bind-9.5-PIE.patch</Patch>
 
 <!--             <Patch level="1">fedora/bind-9.18-zt-include-rwlock.patch</Patch> -->
-            <Patch level="1">fedora/bind-9.18-unittest-netmgr-unstable.patch</Patch>
+<!--             <Patch level="1">fedora/bind-9.18-unittest-netmgr-unstable.patch</Patch> -->
 <!--             <Patch level="1">fedora/bind-9.11-fips-tests.patch</Patch> -->
         </Patches>
     </Source>
@@ -155,6 +155,13 @@
     </Package>
 
     <History>
+        <Update release="11">
+            <Date>2026-07-22</Date>
+            <Version>9.20.26</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Pisi Linux Community</Name>
+            <Email>admin@pisilinux.org</Email>
+        </Update>
         <Update release="10">
             <Date>2024-12-18</Date>
             <Version>9.18.18</Version>
