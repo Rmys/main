@@ -13,7 +13,7 @@
         <Icon>wayland</Icon>
         <Summary>Wayland Compositor Infrastructure</Summary>
         <Description>Wayland is a protocol for a compositor to talk to its clients as well as a C library implementation of that protocol.</Description>
-        <Archive sha1sum="55722deaaa9123cb6a1ce189fa977fa73171e1e4" type="tarxz">https://gitlab.freedesktop.org/wayland/wayland/-/releases/1.25.0/downloads/wayland-1.25.0.tar.xz</Archive>
+        <Archive sha1sum="bad683e7d38c1c3d2daf1f2f2ad62c27d99b98af" type="tarxz">https://gitlab.freedesktop.org/wayland/wayland/-/releases/1.26.0/downloads/wayland-1.26.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>xmlto</Dependency>
             <Dependency>meson</Dependency>
@@ -118,6 +118,13 @@
     </Package>
 
     <History>
+        <Update release="20">
+            <Date>2026-07-17</Date>
+            <Version>1.26.0</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Pisi Linux Community</Name>
+            <Email>admin@pisilinux.org</Email>
+        </Update>
         <Update release="19">
             <Date>2026-05-31</Date>
             <Version>1.25.0</Version>
