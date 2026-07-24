@@ -1,26 +1,26 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "https://pisilinux.org/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>libwmf</Name>
-        <Homepage>http://wvware.sourceforge.net/libwmf.html</Homepage>
+        <Homepage>https://github.com/caolanm/libwmf</Homepage>
         <Packager>
             <Name>PisiLinux Community</Name>
             <Email>admins@pisilinux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>library</IsA>
-        <Summary>Library for reading and converting WMF files</Summary>
+        <Summary>Library for reading and converting WMF files.</Summary>
         <Description>A library for reading and converting Windows MetaFile vector graphics (WMF).</Description>
-        <Archive sha1sum="822ab3bd0f5e8f39ad732f2774a8e9f18fc91e89" type="targz">mirrors://sourceforge/wvware/libwmf-0.2.8.4.tar.gz</Archive>
+        <Archive sha1sum="00ea962aae6d0806d43194c25f98f7359c9f9384" type="targz">https://github.com/caolanm/libwmf/releases/download/v0.2.15/libwmf-0.2.15.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency>libjpeg-turbo-devel</Dependency>
-            <Dependency>harfbuzz-devel</Dependency>
-            <Dependency>freetype-devel</Dependency>
             <Dependency>libX11-devel</Dependency>
             <Dependency>libxml2-devel</Dependency>
             <Dependency>gettext-devel</Dependency>
+            <Dependency>freetype-devel</Dependency>
+            <Dependency>harfbuzz-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
+            <Dependency>libjpeg-turbo-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -37,8 +37,7 @@
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
-            <Path fileType="doc">/usr/share/doc</Path>
-            <Path fileType="data">/usr/share/libwmf</Path>
+            <Path fileType="data">/usr/share</Path>
         </Files>
     </Package>
 
@@ -56,6 +55,13 @@
     </Package>
 
     <History>
+        <Update release="6">
+            <Date>2026-07-24</Date>
+            <Version>0.2.15</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Mustafa Cinasal</Name>
+            <Email>muscnsl@gmail.com</Email>
+        </Update>
         <Update release="5">
             <Date>2020-02-12</Date>
             <Version>0.2.8.4</Version>
