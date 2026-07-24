@@ -2,7 +2,7 @@
 <!DOCTYPE PISI SYSTEM "https://pisilinux.org/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
-        <Name>motif-thentenaar</Name>
+        <Name>motif</Name>
         <Homepage>https://github.com/thentenaar/motif</Homepage>
         <Packager>
             <Name>Kamil Atlı</Name>
@@ -69,12 +69,14 @@
     <Package>
         <Name>motif-devel</Name>
         <RuntimeDependencies>
+            <Dependency>mesa-devel</Dependency>
             <Dependency>libXt-devel</Dependency>
             <Dependency>libX11-devel</Dependency>
             <Dependency>libXpm-devel</Dependency>
             <Dependency>libXmu-devel</Dependency>
             <Dependency>libXft-devel</Dependency>
             <Dependency>libXext-devel</Dependency>
+            <Dependency>libglvnd-devel</Dependency>
             <Dependency release="current">motif</Dependency>
         </RuntimeDependencies>
         <Files>
